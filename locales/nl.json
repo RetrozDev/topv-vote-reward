@@ -1,0 +1,12 @@
+{
+  "vote_received": "Bedankt voor het stemmen! Gebruik /vote-claim om je beloningen op te halen.",
+  "no_discord": "Fout: Kan je Discord-ID niet ophalen.",
+  "no_votes": "Je hebt niet genoeg openstaande stemmen.",
+  "claimed": "Gefeliciteerd! Je hebt %s beloningspakket(ten) geclaimd.",
+  "votes_pending": "Je hebt %s openstaande stem(men).",
+  "webhook_title": "Nieuwe Stem",
+  "webhook_desc": "**%s** stemde voor **%s**",
+  "webhook_field_voter": "Stemmer",
+  "webhook_field_server": "Server",
+  "webhook_field_total": "Totaal stemmen"
+}

@@ -1,0 +1,12 @@
+{
+  "vote_received": "투표해 주셔서 감사합니다! /vote-claim을 사용하여 보상을 받으세요.",
+  "no_discord": "오류: Discord ID를 가져올 수 없습니다.",
+  "no_votes": "보류 중인 투표가 충분하지 않습니다.",
+  "claimed": "축하합니다! %s개의 보상 팩을 받았습니다.",
+  "votes_pending": "보류 중인 투표가 %s개 있습니다.",
+  "webhook_title": "새 투표",
+  "webhook_desc": "**%s** 님이 **%s** 에 투표했습니다",
+  "webhook_field_voter": "투표자",
+  "webhook_field_server": "서버",
+  "webhook_field_total": "총 투표수"
+}

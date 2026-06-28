@@ -1,0 +1,12 @@
+{
+  "vote_received": "Tak for din stemme! Brug /vote-claim for at hente dine belønninger.",
+  "no_discord": "Fejl: Kunne ikke hente dit Discord-ID.",
+  "no_votes": "Du har ikke nok ventende stemmer.",
+  "claimed": "Tillykke! Du indløste %s belønningspakke(r).",
+  "votes_pending": "Du har %s ventende stemme(r).",
+  "webhook_title": "Ny Stemme",
+  "webhook_desc": "**%s** stemte for **%s**",
+  "webhook_field_voter": "Vælger",
+  "webhook_field_server": "Server",
+  "webhook_field_total": "Stemmer i alt"
+}

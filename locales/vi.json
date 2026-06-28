@@ -1,0 +1,12 @@
+{
+  "vote_received": "Cảm ơn bạn đã bình chọn! Sử dụng /vote-claim để nhận thưởng.",
+  "no_discord": "Lỗi: Không thể lấy ID Discord của bạn.",
+  "no_votes": "Bạn không có đủ phiếu bầu đang chờ.",
+  "claimed": "Chúc mừng! Bạn đã nhận %s gói phần thưởng.",
+  "votes_pending": "Bạn có %s phiếu bầu đang chờ.",
+  "webhook_title": "Bình chọn mới",
+  "webhook_desc": "**%s** đã bình chọn cho **%s**",
+  "webhook_field_voter": "Người bình chọn",
+  "webhook_field_server": "Máy chủ",
+  "webhook_field_total": "Tổng phiếu"
+}

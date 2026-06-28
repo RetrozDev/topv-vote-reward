@@ -1,0 +1,12 @@
+{
+  "vote_received": "Thank you for voting! Use /vote-claim to collect your rewards.",
+  "no_discord": "Error: Could not retrieve your Discord ID.",
+  "no_votes": "You don't have enough pending votes.",
+  "claimed": "Congratulations! You claimed %s reward pack(s).",
+  "votes_pending": "You have %s pending vote(s).",
+  "webhook_title": "New Vote",
+  "webhook_desc": "**%s** voted for **%s**",
+  "webhook_field_voter": "Voter",
+  "webhook_field_server": "Server",
+  "webhook_field_total": "Total votes"
+}

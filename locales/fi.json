@@ -1,0 +1,12 @@
+{
+  "vote_received": "Kiitos äänestyksestä! Käytä /vote-claim noutaaksesi palkintosi.",
+  "no_discord": "Virhe: Discord-tunnustasi ei voitu hakea.",
+  "no_votes": "Sinulla ei ole tarpeeksi odottavia ääniä.",
+  "claimed": "Onnittelut! Lunastit %s palkintopakettia.",
+  "votes_pending": "Sinulla on %s odottavaa ääntä.",
+  "webhook_title": "Uusi Ääni",
+  "webhook_desc": "**%s** äänesti **%s**",
+  "webhook_field_voter": "Äänestäjä",
+  "webhook_field_server": "Palvelin",
+  "webhook_field_total": "Ääniä yhteensä"
+}

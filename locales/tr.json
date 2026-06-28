@@ -1,0 +1,12 @@
+{
+  "vote_received": "Oyunuz için teşekkürler! Ödüllerini almak için /vote-claim kullan.",
+  "no_discord": "Hata: Discord ID'n alınamadı.",
+  "no_votes": "Yeterli bekleyen oyunuz yok.",
+  "claimed": "Tebrikler! %s ödül paketi talep ettin.",
+  "votes_pending": "%s bekleyen oy(un) var.",
+  "webhook_title": "Yeni Oy",
+  "webhook_desc": "**%s** **%s** için oy verdi",
+  "webhook_field_voter": "Oy veren",
+  "webhook_field_server": "Sunucu",
+  "webhook_field_total": "Toplam oy"
+}

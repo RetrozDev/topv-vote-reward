@@ -1,0 +1,12 @@
+{
+  "vote_received": "Dziękujemy za głos! Użyj /vote-claim, aby odebrać nagrody.",
+  "no_discord": "Błąd: Nie można pobrać Twojego ID Discord.",
+  "no_votes": "Nie masz wystarczającej liczby oczekujących głosów.",
+  "claimed": "Gratulacje! Odebrałeś %s paczki(ek) nagród.",
+  "votes_pending": "Masz %s oczekujący(e) głos(y).",
+  "webhook_title": "Nowy Głos",
+  "webhook_desc": "**%s** zagłosował na **%s**",
+  "webhook_field_voter": "Głosujący",
+  "webhook_field_server": "Serwer",
+  "webhook_field_total": "Suma głosów"
+}

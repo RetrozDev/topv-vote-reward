@@ -1,0 +1,12 @@
+{
+  "vote_received": "Děkujeme za hlas! Použij /vote-claim pro vyzvednutí odměn.",
+  "no_discord": "Chyba: Nelze získat tvé Discord ID.",
+  "no_votes": "Nemáš dostatek čekajících hlasů.",
+  "claimed": "Gratulujeme! Vyzvedl(a) jsi %s balíčku(ů) odměn.",
+  "votes_pending": "Máš %s čekající hlas(y).",
+  "webhook_title": "Nový Hlas",
+  "webhook_desc": "**%s** hlasoval pro **%s**",
+  "webhook_field_voter": "Volič",
+  "webhook_field_server": "Server",
+  "webhook_field_total": "Celkem hlasů"
+}

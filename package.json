@@ -1,0 +1,19 @@
+{
+  "name": "topv-votes-reward",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "packageManager": "pnpm@10.28.0",
+  "dependencies": {
+    "@citizenfx/client": "2.0.31725-1",
+    "@citizenfx/server": "2.0.31689-1",
+    "@overextended/ox_lib": "^3.38.0",
+    "express": "^5.2.1"
+  }
+}

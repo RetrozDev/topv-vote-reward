@@ -1,0 +1,12 @@
+{
+  "vote_received": "شكراً لتصويتك! استخدم /vote-claim لاستلام مكافآتك.",
+  "no_discord": "خطأ: تعذر استرجاع معرف Discord الخاص بك.",
+  "no_votes": "ليس لديك أصوات كافية معلقة.",
+  "claimed": "تهانينا! لقد استلمت %s حزمة(حزم) مكافآت.",
+  "votes_pending": "لديك %s صوت(أصوات) معلقة.",
+  "webhook_title": "تصويت جديد",
+  "webhook_desc": "**%s** صوت لـ **%s**",
+  "webhook_field_voter": "المصوت",
+  "webhook_field_server": "الخادم",
+  "webhook_field_total": "إجمالي الأصوات"
+}

@@ -1,0 +1,12 @@
+{
+  "vote_received": "感谢您的投票！使用 /vote-claim 领取您的奖励。",
+  "no_discord": "错误：无法获取您的 Discord ID。",
+  "no_votes": "您没有足够的待处理投票。",
+  "claimed": "恭喜！您已领取 %s 个奖励包。",
+  "votes_pending": "您有 %s 个待处理投票。",
+  "webhook_title": "新投票",
+  "webhook_desc": "**%s** 为 **%s** 投了票",
+  "webhook_field_voter": "投票人",
+  "webhook_field_server": "服务器",
+  "webhook_field_total": "总投票数"
+}

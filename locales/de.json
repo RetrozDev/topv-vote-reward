@@ -1,0 +1,12 @@
+{
+  "vote_received": "Danke für deine Stimme! Nutze /vote-claim, um deine Belohnungen abzuholen.",
+  "no_discord": "Fehler: Deine Discord-ID konnte nicht ermittelt werden.",
+  "no_votes": "Du hast nicht genug ausstehende Stimmen.",
+  "claimed": "Glückwunsch! Du hast %s Belohnungspaket(e) eingelöst.",
+  "votes_pending": "Du hast %s ausstehende Stimme(n).",
+  "webhook_title": "Neue Stimme",
+  "webhook_desc": "**%s** hat für **%s** gestimmt",
+  "webhook_field_voter": "Wähler",
+  "webhook_field_server": "Server",
+  "webhook_field_total": "Gesamtstimmen"
+}

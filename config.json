@@ -1,0 +1,27 @@
+{
+  "secret": "your TopV integration secret",
+  "discordWebhook": "webhook url or empty to disable",
+  "discordBotName": "",
+  "discordBotAvatar": "",
+  "votesPerReward": 1,
+  "rewards": [
+    {
+      "type": "money",
+      "amount": 500
+    },
+    {
+      "type": "bank",
+      "amount": 500
+    },
+    {
+      "type": "black_money",
+      "amount": 100
+    },
+    {
+      "type": "item",
+      "name": "water",
+      "label": "Water",
+      "amount": 5
+    }
+  ]
+}

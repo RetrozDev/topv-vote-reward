@@ -1,0 +1,12 @@
+{
+  "vote_received": "Tack för din röst! Använd /vote-claim för att hämta dina belöningar.",
+  "no_discord": "Fel: Kunde inte hämta ditt Discord-ID.",
+  "no_votes": "Du har inte tillräckligt med väntande röster.",
+  "claimed": "Grattis! Du löste in %s belöningspaket.",
+  "votes_pending": "Du har %s väntande röst(er).",
+  "webhook_title": "Ny Röst",
+  "webhook_desc": "**%s** röstade för **%s**",
+  "webhook_field_voter": "Väljare",
+  "webhook_field_server": "Server",
+  "webhook_field_total": "Totalt röster"
+}

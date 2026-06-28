@@ -1,0 +1,12 @@
+{
+  "vote_received": "Спасибо за голос! Используй /vote-claim для получения награды.",
+  "no_discord": "Ошибка: не удалось получить ваш Discord ID.",
+  "no_votes": "У вас недостаточно ожидающих голосов.",
+  "claimed": "Поздравляем! Вы получили %s набора(ов) наград.",
+  "votes_pending": "У вас %s ожидающих голоса(ов).",
+  "webhook_title": "Новый голос",
+  "webhook_desc": "**%s** проголосовал за **%s**",
+  "webhook_field_voter": "Избиратель",
+  "webhook_field_server": "Сервер",
+  "webhook_field_total": "Всего голосов"
+}

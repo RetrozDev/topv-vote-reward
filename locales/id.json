@@ -1,0 +1,12 @@
+{
+  "vote_received": "Terima kasih telah memilih! Gunakan /vote-claim untuk mengambil hadiahmu.",
+  "no_discord": "Kesalahan: Tidak dapat mengambil ID Discord Anda.",
+  "no_votes": "Kamu tidak memiliki cukup suara tertunda.",
+  "claimed": "Selamat! Kamu mengklaim %s paket hadiah.",
+  "votes_pending": "Kamu memiliki %s suara tertunda.",
+  "webhook_title": "Suara Baru",
+  "webhook_desc": "**%s** memilih untuk **%s**",
+  "webhook_field_voter": "Pemilih",
+  "webhook_field_server": "Server",
+  "webhook_field_total": "Total suara"
+}

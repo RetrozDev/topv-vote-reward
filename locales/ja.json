@@ -1,0 +1,12 @@
+{
+  "vote_received": "投票ありがとうございます！ /vote-claim を使用して報酬を受け取ってください。",
+  "no_discord": "エラー：Discord IDを取得できませんでした。",
+  "no_votes": "保留中の投票が十分にありません。",
+  "claimed": "おめでとうございます！ %s 個の報酬パックを受け取りました。",
+  "votes_pending": "保留中の投票が %s 件あります。",
+  "webhook_title": "新しい投票",
+  "webhook_desc": "**%s** が **%s** に投票しました",
+  "webhook_field_voter": "投票者",
+  "webhook_field_server": "サーバー",
+  "webhook_field_total": "総投票数"
+}
