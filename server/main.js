@@ -57,13 +57,42 @@ on('topv:checkVotes', async (src, discordId) => {
         return;
     }
     try {
-        const result = await global.exports.oxmysql.query_async(
-            'SELECT votes FROM votes WHERE discord_id = ?', [discordId]
-        );
-        notify(src, 'votes_pending', 'inform', String(result[0]?.votes || 0));
+        const row = await getPlayerRow(discordId);
+        notify(src, 'votes_pending', 'inform', String(row.votes));
+        if (row.total_votes > 0) {
+            notify(src, 'votes_total', 'inform', String(row.total_votes));
+        }
     } catch (err) {
         console.log('^1[topv-votes] DB Error: ' + err);
     }
+});
+
+async function getPlayerRow(discordId) {
+    const result = await global.exports.oxmysql.query_async(
+        'SELECT votes, total_votes FROM votes WHERE discord_id = ?', [discordId]
+    );
+    return result[0] || { votes: 0, total_votes: 0 };
+}
+
+exports('getPlayerVotes', async (discordId) => {
+    const row = await getPlayerRow(discordId);
+    return { pending: row.votes, total: row.total_votes };
+});
+
+exports('getPlayerPendingVotes', async (discordId) => {
+    const row = await getPlayerRow(discordId);
+    return row.votes;
+});
+
+exports('getPlayerTotalVotes', async (discordId) => {
+    const row = await getPlayerRow(discordId);
+    return row.total_votes;
+});
+
+exports('getPlayerRemainingVotes', async (discordId) => {
+    const row = await getPlayerRow(discordId);
+    const remainder = row.votes % config.votesPerReward;
+    return remainder === 0 ? 0 : config.votesPerReward - remainder;
 });
 
 function discordWebhook(embed) {
@@ -161,7 +190,13 @@ const server = http.createServer(async (req, res) => {
             const discordId = payload.voter.discordId;
             console.log('^2[topv-votes] Vote recu de ' + payload.voter.displayName + ' (' + discordId + ')');
 
+            await global.exports.oxmysql.query_async(
+                'INSERT INTO votes (discord_id, votes, total_votes) VALUES (?, 1, 1) ON DUPLICATE KEY UPDATE votes = votes + 1, total_votes = total_votes + 1',
+                [discordId]
+            );
+
             if (config.discordWebhook) {
+                const updated = await getPlayerRow(discordId);
                 discordWebhook({
                     username: config.discordBotName || 'TopV Votes',
                     avatar_url: config.discordBotAvatar || '',
@@ -172,18 +207,13 @@ const server = http.createServer(async (req, res) => {
                         fields: [
                             { name: '👤 ' + locale('webhook_field_voter'), value: payload.voter.username,          inline: true },
                             { name: '🖥️ ' + locale('webhook_field_server'), value: payload.profile.name,            inline: true },
-                            { name: '📊 ' + locale('webhook_field_total'), value: String(payload.vote.totalVotes), inline: true },
+                            { name: '📊 ' + locale('webhook_field_total'), value: String(updated.total),             inline: true },
                         ],
                         footer: { text: 'TopV.gg' },
                         timestamp: new Date().toISOString(),
                     }],
                 }).catch((err) => console.log('^1[topv-votes] Webhook error: ' + err));
             }
-
-            await global.exports.oxmysql.query_async(
-                'INSERT INTO votes (discord_id, votes, total_votes) VALUES (?, 1, 1) ON DUPLICATE KEY UPDATE votes = votes + 1, total_votes = total_votes + 1',
-                [discordId]
-            );
 
             const player = connectedPlayers.get(discordId) ?? null;
             if (player) notify(player, 'vote_received', 'success');

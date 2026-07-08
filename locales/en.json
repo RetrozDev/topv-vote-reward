@@ -4,6 +4,7 @@
   "no_votes": "You don't have enough pending votes.",
   "claimed": "Congratulations! You claimed %s reward pack(s).",
   "votes_pending": "You have %s pending vote(s).",
+  "votes_total": "You have %s total lifetime vote(s).",
   "webhook_title": "New Vote",
   "webhook_desc": "**%s** voted for **%s**",
   "webhook_field_voter": "Voter",

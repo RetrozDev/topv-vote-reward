@@ -8,6 +8,7 @@ Thanks for wanting to contribute! Here's how to get started.
 - Test your changes on a local FiveM server before submitting.
 - Update `config.json` examples if you add new options.
 - If you add new locale keys, update all locale files in `locales/`.
+- Use [Conventional Commits](https://www.conventionalcommits.org/) for commit messages (`feat:`, `fix:`, `docs:`, etc.).
 
 ## Issues
 
@@ -19,4 +20,5 @@ Thanks for wanting to contribute! Here's how to get started.
 
 - Use `camelCase` for variables and functions.
 - No semicolons in Lua files.
-- Use 2-space indentation.
+- Use 2-space indentation in Lua files.
+- Use 4-space indentation in JavaScript files.
