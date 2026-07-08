@@ -43,7 +43,31 @@ Add `ensure topv-votes-reward` to your `server.cfg` and restart your server.
 | Command | Description |
 |---------|-------------|
 | `/vote-claim` | Claim your pending vote rewards |
-| `/vote-count` | Check how many pending votes you have |
+| `/vote-count` | Check your pending and total lifetime votes |
+
+## Exports
+
+These can be called from any other resource using `exports.topv-votes-reward:functionName(discordId)`.
+
+| Export | Returns | Description |
+|--------|---------|-------------|
+| `getPlayerVotes(discordId)` | `{ pending, total }` | Get pending claimable votes and lifetime total |
+| `getPlayerPendingVotes(discordId)` | `number` | Get only the pending claimable votes |
+| `getPlayerTotalVotes(discordId)` | `number` | Get the lifetime total votes |
+| `getPlayerRemainingVotes(discordId)` | `number` | Get votes needed until the next reward |
+
+### Example
+
+```lua
+local votes = exports['topv-votes-reward']:getPlayerVotes(discordId)
+print(('Pending: %d, Total lifetime: %d'):format(votes.pending, votes.total))
+```
+
+## Lifetime Total Votes
+
+Every vote cast is tracked in the `total_votes` column. This counter is permanent and never decreases, allowing you to track each player's lifetime engagement. The `votes` column (pending) is decremented when rewards are claimed.
+
+For existing databases, the migration is handled automatically on resource start — the `total_votes` column will be added and initialized to `0` for all existing rows. Existing pending votes are preserved.
 
 ## Config Options
 
