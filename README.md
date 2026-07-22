@@ -9,7 +9,7 @@ A FiveM resource that rewards players for voting on [TopV.gg](https://topv.gg/).
 Your server must be reachable via **HTTPS** (not HTTP). The callback URL will be:
 
 ```
-https://<your-server-ip-or-domain>:<port>/api/topv-vote
+https://<your-server-ip-or-domain>:<port>/topv-vote-reward/api/topv-vote
 ```
 
 ### 2. Set up the callback on TopV.gg
